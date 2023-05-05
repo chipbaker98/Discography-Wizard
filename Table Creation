@@ -1,0 +1,59 @@
+#Create Table Artists
+####################################################################################
+create table artists (
+ID int not null auto_increment,
+Artist varchar(255) not null,
+primary key (ID)
+);
+####################################################################################
+
+
+
+
+
+#Create Table Albums
+####################################################################################
+create table albums(
+ID int not null auto_increment,
+Album varchar(255) not null,
+Album_Type varchar(255) not null,
+Artist_ID int,
+primary key (ID),
+foreign key (Artist_ID) references artists(ID)
+);
+####################################################################################
+
+
+
+
+
+#Create Table Songs
+####################################################################################
+create table songs(
+ID int not null,
+Song varchar(255) not null,
+Artist_ID int not null,
+Album_ID_1 int not null,
+Album_ID_2 int null,
+Album_ID_3 int null,
+Album_ID_4 int null,
+Album_ID_5 int null,
+Album_ID_6 int null,
+Album_ID_7 int null,
+Album_ID_8 int null,
+Album_ID_9 int null,
+Album_ID_10 int null,
+primary key(ID),
+foreign key (Artist_ID) references artists(ID),
+foreign key (Album_ID_1) references albums(ID),
+foreign key (Album_ID_2) references albums(ID),
+foreign key (Album_ID_3) references albums(ID),
+foreign key (Album_ID_4) references albums(ID),
+foreign key (Album_ID_5) references albums(ID),
+foreign key (Album_ID_6) references albums(ID),
+foreign key (Album_ID_7) references albums(ID),
+foreign key (Album_ID_8) references albums(ID),
+foreign key (Album_ID_9) references albums(ID),
+foreign key (Album_ID_10) references albums(ID)
+);
+####################################################################################
