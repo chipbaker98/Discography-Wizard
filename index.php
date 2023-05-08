@@ -208,47 +208,47 @@ else
         kanyeWestDropdown.on('change', function () {
             var selectedOption = kanyeWestDropdown.val();
             fetchAlbum(1, selectedOption, 'kanye-albums');
-            $('#drake-albums').html(''); // Clear Drake's albums when selecting another artist's song
-            $('#Travis_Scott-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
-            $('#The_Weeknd-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
-            $('#Rihanna-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
+            $('#drake-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#Travis_Scott-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#The_Weeknd-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#Rihanna-albums').html(''); // Clear album(s) when selecting another artist's song
 
         });
 
         drakeDropdown.on('change', function () {
             var selectedOption = drakeDropdown.val();
             fetchAlbum(2, selectedOption, 'drake-albums');
-            $('#kanye-albums').html(''); // Clear Kanye West's albums when selecting another artist's song
-            $('#Travis_Scott-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
-            $('#The_Weeknd-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
-            $('#Rihanna-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
+            $('#kanye-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#Travis_Scott-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#The_Weeknd-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#Rihanna-albums').html(''); // Clear album(s) when selecting another artist's song
         });
 
         Travis_ScottDropdown.on('change', function () {
             var selectedOption = Travis_ScottDropdown.val();
             fetchAlbum(3, selectedOption, 'Travis_Scott-albums');
-            $('#kanye-albums').html(''); // Clear Kanye West's albums when selecting another artist's song
-            $('#drake-albums').html(''); // Clear Drake's albums when selecting another artist's song
-            $('#The_Weeknd-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
-            $('#Rihanna-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
+            $('#kanye-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#drake-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#The_Weeknd-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#Rihanna-albums').html(''); // Clear album(s) when selecting another artist's song
         });
 
         The_Weeknd_Drop_Down.on('change', function () {
             var selectedOption = The_Weeknd_Drop_Down.val();
             fetchAlbum(4, selectedOption, 'The_Weeknd-albums');
-            $('#kanye-albums').html(''); // Clear Kanye West's albums when selecting another artist's song
-            $('#drake-albums').html(''); // Clear Drake's albums when selecting another artist's song
-            $('#Travis_Scott-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
-            $('#Rihanna-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
+            $('#kanye-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#drake-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#Travis_Scott-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#Rihanna-albums').html(''); // Clear album(s) when selecting another artist's song
         });
 
         Rihanna_Drop_Down.on('change', function () {
             var selectedOption = Rihanna_Drop_Down.val();
             fetchAlbum(5, selectedOption, 'Rihanna-albums');
-            $('#kanye-albums').html(''); // Clear Kanye West's albums when selecting another artist's song
-            $('#drake-albums').html(''); // Clear Drake's albums when selecting another artist's song
-            $('#Travis_Scott-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
-            $('#The_Weeknd-albums').html(''); // Clear Ice Spice's albums when selecting another artist's song
+            $('#kanye-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#drake-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#Travis_Scott-albums').html(''); // Clear album(s) when selecting another artist's song
+            $('#The_Weeknd-albums').html(''); // Clear album(s) when selecting another artist's song
         });
 
         function fetchAlbum(artistID, songName, targetElementID) {
